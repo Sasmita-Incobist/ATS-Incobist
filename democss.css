@@ -1,0 +1,1293 @@
+/* Base Styles */
+body {
+    font-family: "Tiro Tamil", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+.logo {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 3px 30px;
+    font-size: 1.2rem;
+}
+
+.navtext {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.textInside {
+    color: white;
+}
+
+.GetTheApp,
+.signUpFont {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.GetTheApp {
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 4px 24px;
+    color: white;
+}
+
+.signUpFont {
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 4px 16px;
+    color: white;
+}
+
+/* ------------dropdown_codes--------------- */
+/* Hide dropdown by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    padding: 0;
+}
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style the dropdown items */
+.dropdown-item {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #042F51;
+    color: #fff;
+    /* Optional: Add a color change on hover */
+}
+
+/* Optional: Change the text color of the main link on hover */
+.nav-item.dropdown:hover .nav-link {
+    color: #fff;
+    /* Main item text color on hover */
+    background-color: #ebeaea33;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+
+
+/*----------------- Section 1--------------- */
+
+
+/* .welcomeSection1 {
+    padding-top: 20%;
+    font-size: 2rem;
+}
+
+.welcomeSection2 {
+    font-size: 1.5rem;
+}
+
+.buttonSection {
+    border-radius: 10px;
+    padding: 8px 24px;
+} */
+
+
+.section1 {
+    background: url("image/wallpaper.jpeg") center/cover no-repeat;
+    height: 85vh;
+}
+
+/* Search Form */
+.section1Container {
+    margin-top: -15vh;
+    padding-top: 85vh;
+}
+
+.formSection {
+    border-radius: 10px;
+    background-color: rgba(4, 29, 43, 0.75);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -25vh;
+}
+
+.formDesign {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: #042f51;
+    font-size: 1rem;
+}
+
+.inputImage1 {
+    background-image: url("Image/Place\ Marker.png");
+}
+
+.inputImage2 {
+    background-image: url("Image/Account.png");
+}
+
+.inputImage3 {
+    background-image: url("Image/Money\ Bag.png");
+}
+
+.inputImage4 {
+    background-image: url("Image/Calendar.png");
+}
+
+.inputImageSize {
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    background-color: #042f51;
+    color: white;
+}
+
+.inputImageSize::placeholder {
+    color: white;
+    padding-left: 5px;
+    font-size: 10px;
+    font-family: "Tiro Tamil";
+    font-weight: 300;
+}
+
+/* Placeholder Styling */
+.inputImageSize::placeholder {
+    color: white;
+    padding-left: 5px;
+    font-size: 0.9rem;
+}
+
+/* Search Button */
+.searchBtnBg {
+    background-color: #0862a3;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.searchBtn {
+    background-color: #0862a3;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .welcomeSection1 {
+        font-size: 2vw;
+    }
+
+    .welcomeSection2 {
+        font-size: 1.2vw;
+    }
+
+    .formDesign {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .section1 {
+        height: 104vh;
+    }
+
+    .formSection {
+        margin-top: -10vh;
+    }
+
+    .welcomeSection1 {
+        font-size: 1.8vw;
+    }
+
+    .welcomeSection2 {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Navbar adjustments for smaller screens */
+    .logo {
+        font-size: 1rem;
+        padding: 3px 20px;
+    }
+
+    .navtext {
+        font-size: 1rem;
+    }
+
+    .GetTheApp,
+    .signUpFont {
+        font-size: 1rem;
+    }
+
+    /* Section 1 adjustments */
+    .section1Container {
+        margin-top: -10vh;
+        padding-top: 70vh;
+    }
+
+    .welcomeSection1 {
+        font-size: 1.5rem;
+    }
+
+    .welcomeSection2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Stack form inputs for smaller screens */
+    .formSection {
+        flex-direction: column;
+        margin-top: -12rem !important;
+
+    }
+
+    .formDesign {
+        margin-bottom: 10px;
+    }
+
+    .searchBtnBg {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .searchBtn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .welcomeSection1 {
+        font-size: 1.2rem;
+    }
+
+    .welcomeSection2 {
+        font-size: 1rem;
+    }
+
+    .form-col {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        padding-left: 0px !important;
+    }
+}
+
+/* Image Stack Section */
+.imageSection {
+    background: #dbe9f2;
+    height: 640px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSection img {
+    transition: all 0.3s;
+}
+
+.image1 {
+    height: 550px;
+    margin: 20px;
+}
+
+.image2 {
+    height: 400px;
+    margin-left: -310px;
+}
+
+.image3 {
+    height: 300px;
+    margin-left: -180px;
+}
+
+.writingSection {
+    padding: 48px 50px 40px 80px;
+}
+
+.firstParagraph {
+    font-size: 20px;
+    color: #042f51;
+}
+
+.fontHeader {
+    font-size: 40px;
+    line-height: 30px;
+    color: #042f51;
+}
+
+.lastParagraph {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #042f51;
+    padding: 16px 0px;
+}
+
+.readMore {
+    font-family: "Tiro Tamil", serif;
+    background: #0862a3;
+    color: #fff;
+    padding: 14px 55px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .imageSection {
+        height: 500px;
+    }
+
+    .image1 {
+        height: 400px;
+        margin: 10px;
+    }
+
+    .image2 {
+        height: 300px;
+        margin-left: -180px;
+    }
+
+    .image3 {
+        height: 250px;
+        margin-left: -100px;
+    }
+
+    .writingSection {
+        padding: 40px 30px 20px 40px;
+    }
+
+    .fontHeader {
+        font-size: 32px;
+    }
+
+    .lastParagraph {
+        font-size: 15px;
+    }
+
+    .readMore {
+        font-size: 18px;
+        padding: 12px 45px;
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 576px) {
+    .imagestack-row {
+        flex-direction: column;
+    }
+
+    .imageSection {
+        height: 500px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .image1 {
+        height: 390px;
+        margin-left: 12px;
+    }
+
+    .image2 {
+        height: 300px;
+        margin-left: -240px;
+    }
+
+    .image3 {
+        height: 220px;
+        margin-left: -150px;
+    }
+
+    .writingSection {
+        padding: 20px 20px 10px;
+        text-align: center;
+    }
+
+    .firstParagraph {
+        font-size: 18px;
+    }
+
+    .fontHeader {
+        font-size: 28px;
+        line-height: 1.1;
+    }
+
+    .lastParagraph {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+
+    .readMore {
+        font-size: 16px;
+        padding: 10px 30px;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+/* grid image section  */
+
+.grid_container {
+    padding: 50px 100px;
+}
+
+.grid_container h1 {
+    font-size: 48px;
+}
+
+.imageContainer {
+    height: 380px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: #093d62;
+}
+
+/* Hover Effect */
+.imageContainer:hover {
+    background-color: #c8f5ff;
+    color: #093d62;
+    transform: scale(1.05);
+}
+
+.imageSize {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+
+/* Scale image on hover */
+.imageContainer:hover .imageSize {
+    transform: scale(1.15);
+}
+
+/* Text content styling */
+.textContent {
+    color: #093d62;
+}
+
+.imageText {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: -40px;
+    text-align: left;
+    padding-left: 10px;
+    font-family: "Shanti", sans-serif;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.imageSubtext {
+    font-size: 16px;
+    margin: 20px 0px 0px;
+    text-align: left;
+    font-family: "Tiro Tamil", sans-serif;
+    color: #093d62;
+    line-height: 24px;
+}
+
+.containerParagraph {
+    font-size: 11px;
+    margin-top: 2px;
+    text-align: left;
+    color: #093d62;
+}
+
+/* --for hotels- */
+.containerPragraph {
+    font-weight: 500;
+    font-size: 12px;
+    color: #093d62b2;
+    font-family: "Shanti", serif;
+}
+
+.topHotel {
+    background: #093d62;
+    display: inline;
+    color: white;
+    font-size: 12px;
+    padding: 4px;
+    font-weight: 400;
+    margin-right: 16px;
+}
+
+.spanText {
+    font-size: 16px;
+    font-weight: 500;
+    color: #093d62;
+}
+
+@media (max-width: 768px) {
+    .grid_container {
+        padding: 20px;
+    }
+
+    .grid_container h1 {
+        font-size: 2.1rem;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .fontHeader {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .imageContainer-row {}
+
+    .imageContainer {
+        margin-bottom: 0px;
+        width: 100%;
+        max-width: 80%;
+    }
+}
+
+
+/* Neon background styling */
+.neonBackground {
+    background: url("Image/neon-background-image.jpg") rgba(0, 0, 0, 0.3);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 721px;
+    top: 2922px;
+}
+
+.neonContainer {
+    height: 721px;
+    display: flex;
+    flex-direction: column;
+    background: #093D62D1;
+    color: white;
+}
+
+.neonHeader {
+    padding: 20px 0 0 70px;
+    font-weight: lighter;
+    font-size: 45px;
+    line-height: 60px;
+    font-family: "Abhaya Libre Medium";
+}
+
+.neonParagraph {
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    padding: 0 180px 50px 70px;
+}
+
+.neonImage {
+    padding: 20px 70px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+
+    /* Center items for mobile view */
+    .neonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Center vertically if the height allows */
+        padding-top: 20px;
+        text-align: center;
+        margin-left: 6rem;
+    }
+
+    .neonImage {
+        order: -1;
+        /* Move the neonImage to the top */
+        justify-content: center;
+        background: #093d62d1;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .neonImage img {
+        max-width: 100px;
+        margin: 0 5px;
+    }
+
+    .neonHeader {
+        font-size: 35px;
+        line-height: 50px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .neonParagraph {
+        font-size: 14px;
+        padding: 0 20px 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .neonHeader {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .neonParagraph {
+        font-size: 13px;
+    }
+}
+
+/* ------------------choose_us_section----------------------  */
+.headerImage-1 {
+    background: #0a3c64;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 70px;
+    font-family: "Abhaya Libre Medium";
+    border: 1px solid #0a3c64;
+    background-color: #dbe9f2;
+    width: 20vw;
+    padding: 60px 0px 60px 30px;
+    z-index: 1;
+}
+
+.headerImage-2 {
+    width: 25vw;
+    height: 25vh;
+    margin-top: 30px;
+    padding-left: 11px;
+}
+
+.headerImage-3 {
+    width: 21.5vw;
+    height: 30vh;
+}
+
+.headerImage-4 {
+    width: 27vw;
+    height: 50vh;
+    margin: -200px 0px 0px -14px;
+}
+
+.chooseContainer {
+    background: #0a3c64;
+    width: 100%;
+    height: 797px;
+    top: 4335px;
+}
+
+.loremContainer {
+    padding: 120px 50px 80px 50px;
+}
+
+.loremText {
+    color: #dbe8f2;
+    font-size: 17px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.readMore {
+    font-family: "Tiro Tamil", serif;
+    background: #0862a3;
+    padding: 14px 55px;
+    font-size: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+
+    /* Stacking Images Above Content */
+    .loremContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .headerImage-1,
+    .headerImage-2,
+    .headerImage-3,
+    .headerImage-4 {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    /* Adjusting Text Area */
+    .loremText {
+        text-align: start;
+        padding-top: 20px;
+        font-size: 16px;
+    }
+
+    .readMore {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+/*--------------USP Section Styling---------------*/
+.uspContainer {
+    padding: 3rem 1rem;
+}
+
+.uspBorder {
+    border: 2px solid #093d62;
+}
+
+.uspHeader {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.uspReadMore {
+    background: #0862a3;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+.uspH4Header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0a3c64;
+}
+
+.uspParagraph {
+    padding: 20px;
+    color: #093d62;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .uspHeader {
+        font-size: 2rem;
+    }
+
+    .uspContainer .row {
+        text-align: center;
+    }
+
+    .uspContainer {
+        margin-top: 500px;
+    }
+
+    .uspReadMore {
+        padding: 6px 20px;
+        font-size: 0.875rem;
+    }
+
+    .uspH4Header {
+        font-size: 1.25rem;
+    }
+
+    .uspParagraph {
+        font-size: 0.875rem;
+    }
+}
+
+/*--------------------worldmap_section---------------------  */
+.statistics-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: #093D62;
+
+}
+
+.left-section {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat-box {
+    width: 45%;
+    display: flex;
+    align-items: start;
+}
+
+.stat-number {
+    font-size: 36px;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #5BB3F2;
+    font-family: "poppins";
+}
+
+.stat-text {
+    font-size: 16px;
+    color: #5BB3F2;
+    font-family: 'poppins';
+}
+
+.right-section {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-image {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+/*------------------ Responsive adjustments------------ */
+@media (max-width: 768px) {
+    .statistics-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 10rem;
+    }
+
+    .left-section,
+    .right-section {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .stat-box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .stat-text {
+        text-align: start;
+    }
+}
+
+
+/* ---------Rating-section------------  */
+
+.ratingColor i {
+    color: rgb(255, 191, 0);
+}
+
+.ratingSection {
+    width: 100%;
+    height: 700px;
+}
+
+.ratingParagraph {
+    padding: 10px 120px;
+    font-weight: 700;
+    color: #093d62;
+}
+
+.ratingImage {
+    padding-top: 80px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    .ratingSection {
+        margin-top: -120px;
+        height: auto;
+    }
+
+    .ratingSection .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .ratingSection .col:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -100px;
+    }
+}
+
+/*-----------------footer-----------------------*/
+
+.footerContainer {
+    background: #093d62;
+    width: 100%;
+    height: auto;
+}
+
+.footerRow {
+    padding: 80px;
+    color: white;
+}
+
+.footerRow p,
+a {
+    font-weight: 350;
+}
+
+.footerRow div h5 {
+    font-size: 20px;
+    font-family: "Tiro Tamil";
+}
+
+.footerCol1 h6 {
+    font-size: 14px;
+    color: #00f0ff;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.footerCol1 p {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.footerCol2 ul {
+    line-height: 35px;
+}
+
+.footerCol2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerCol3 input {
+    width: 100%;
+    background-color: #1f4d6e;
+    border: 1px solid rgba(255, 255, 255, 0.51);
+    padding: 5px 16px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.customPlaceholder::placeholder {
+    color: rgb(189, 184, 184);
+}
+
+.footerCol3 a {
+    color: white;
+    font-size: 20px;
+    padding-right: 16px;
+}
+
+.footerEnd {
+    width: 100%;
+    background: #042f51;
+    padding: 15px 0;
+}
+
+.thickLine {
+    height: 2.5px;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+    opacity: 0.6;
+}
+
+.footerEnd div {
+    font-weight: 350;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .footerRow {
+        padding: 40px;
+    }
+
+    .footerCol1,
+    .footerCol2,
+    .footerCol3 {
+        margin-bottom: 30px;
+    }
+
+    .footerEnd {
+        text-align: center;
+    }
+
+    .footerEnd .col {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerRow {
+        padding: 20px;
+    }
+
+    .footerEnd .d-flex {
+        flex-direction: column;
+    }
+}
+
+
+/* ----------------explore.html---------------------- */
+
+.section2 {
+    background: url("image/singpore.png") center/cover no-repeat;
+    height: 85vh;
+}
+
+/* Search Form */
+.section2Container {
+    margin-top: -15vh;
+    padding-top: 85vh;
+}
+
+.formSection {
+    border-radius: 10px;
+    background-color: rgba(4, 29, 43, 0.75);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -14vh;
+}
+
+.formDesign {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: #042f51;
+    font-size: 0.5rem;
+}
+
+/* ------------places_gallery_container--------------- */
+.places_inner_container {
+    padding: 50px;
+}
+
+.places_container span {
+    color: #0CA5AF;
+}
+
+.places_container h2 {
+    font-family: "Tiro Tamil";
+    font-size: 40px;
+}
+
+.places_container p {
+    font-family: "Tiro Tamil";
+    font-size: 27px;
+}
+
+.gallery_img_container {
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 900px; */
+    margin: auto;
+    gap: 10px;
+}
+
+.main-image {
+    flex: 1 1 60%;
+    position: relative;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.side-images {
+    flex: 1 1 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-image {
+    flex: 1;
+}
+
+.top-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bottom-images {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.bottom-images .small-image {
+    flex: 1;
+    position: relative;
+}
+
+.bottom-images .small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.see-more-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.bottom-images .see-more:hover .see-more-overlay {
+    opacity: 1;
+}
+
+.see-more-overlay span {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .gallery_img_container {
+        flex-direction: column;
+    }
+
+    .main-image,
+    .side-images {
+        flex: 1 1 100%;
+    }
+
+    .bottom-images {
+        flex-direction: row;
+    }
+}
+
+/* ----------------description_overview------------------- */
+
+/*------------New Description Section Styles---------*/
+
+.description-section {
+    background-color: #DBE9F2;
+    padding: 40px;
+    margin-top: 0px;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: "Tiro Tamil";
+}
+
+.info-row span {
+    display: block;
+}
+
+.black-line {
+    height: 2px;
+    background-color: black;
+    margin: 10px 0;
+}
+
+.section-heading {
+    font-size: 1.7rem;
+    margin-top: 10px;
+    font-family: "Tiro Tamil";
+}
+
+.section-text {
+    font-size: 1.3rem;
+    color: #042F51;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-family: "Tiro Tamil";
+}
+
+.tips-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #042F51;
+    font-size: 1.3rem;
+    font-family: "Tiro Tamil";
+}
+
+@media (max-width: 768px) {
+    .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .places_container h2 {
+        font-size: 25px;
+    }
+
+    .places_container p {
+        font-size: 18px;
+    }
+
+    .section-text {
+        font-size: 1rem;
+    }
+
+    .info-row {
+        font-size: 1rem;
+    }
+
+    .see-more-overlay {
+        font-size: 1rem;
+    }
+}

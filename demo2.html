@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery_img_container</title>
+    <style>
+        .gallery_img_container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin: auto;
+            gap: 10px;
+        }
+
+        .main-image {
+            flex: 1 1 60%;
+            position: relative;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .side-images {
+            flex: 1 1 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .top-image {
+            flex: 1;
+        }
+
+        .top-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .bottom-images {
+            display: flex;
+            gap: 10px;
+            flex: 1;
+        }
+
+        .bottom-images .small-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .bottom-images .small-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .see-more-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .bottom-images .see-more:hover .see-more-overlay {
+            opacity: 1;
+        }
+
+        .see-more-overlay span {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery_img_container {
+                flex-direction: column;
+            }
+
+            .main-image,
+            .side-images {
+                flex: 1 1 100%;
+            }
+
+            .bottom-images {
+                flex-direction: row;
+            }
+        }
+
+
+        /*------------New Description Section Styles---------*/
+
+        .description-section {
+            background-color: #DBE9F2;
+            padding: 20px;
+            margin-top: 40px;
+            max-width: 900px;
+            margin: 40px auto;
+            border-radius: 10px;
+
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 500;
+            font-family: "Tiro Tamil";
+        }
+
+        .info-row span {
+            display: block;
+        }
+
+        .black-line {
+            height: 2px;
+            background-color: black;
+            margin: 10px 0;
+        }
+
+        .section-heading {
+            font-size: 1.7rem;
+            margin-top: 10px;
+            font-family: "Tiro Tamil";
+        }
+
+        .section-text {
+            font-size: 1.3rem;
+            color: #042F51;
+            margin-top: 10px;
+            line-height: 1.5;
+            font-family: "Tiro Tamil";
+        }
+
+        .tips-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #042F51;
+            font-size: 1.3rem;
+            font-family: "Tiro Tamil";
+        }
+
+        @media (max-width: 768px) {
+            .info-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .places_container h2{
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gallery_img_container">
+        <div class="main-image">
+            <img src="./Image/image 16.png" alt="Large Image">
+        </div>
+
+        <div class="side-images">
+            <div class="top-image">
+                <img src="./Image/image 15.png" alt="Top Image">
+            </div>
+
+            <div class="bottom-images">
+                <div class="small-image">
+                    <img src="Image/image 8.png" alt="Small Image 1">
+                </div>
+                <div class="small-image see-more">
+                    <img src="Image/image 19.png" alt="Small Image 2">
+                    <div class="see-more-overlay">
+                        <span>See More</span> 35+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------description_overview--------- -->
+
+    <div class="description-section">
+        <div class="info-row">
+            <span>5km away from Jagannath Temple</span>
+            <span>Best time to visit - 5pm to 10pm</span>
+        </div>
+
+        <div class="black-line"></div>
+
+        <div class="section-heading">Description</div>
+        <p class="section-text">
+            Experience unparalleled comfort and luxury at [Hotel Name], ideally located in the heart of Bhubaneswar. Our
+            elegantly designed rooms, exceptional dining options, and world-class amenities ensure a memorable stay. Our
+            dedicated staff is here to provide personalized service, making your visit truly special. Book your stay
+            today and enjoy exclusive offers!
+        </p>
+
+        <div class="section-heading">Tips</div>
+        <ul class="tips-list">
+            <li> Do not venture into the sea before consulting the lifeguard on duty, especially during the monsoons.
+            </li>
+            <li> Before stepping out in the sun, don’t forget to apply sunscreen on the exposed areas of your skin.</li>
+            <li> Don’t forget to check out Tito’s Lane if you want to indulge in a shopping spree.</li>
+        </ul>
+        
+    </div>
+
+</body>
+
+</html>
